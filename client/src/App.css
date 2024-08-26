@@ -1,0 +1,29 @@
+/* Ejemplo de ajustes básicos para responsive design */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.fixed {
+  position: fixed;
+}
+
+@media (max-width: 768px) {
+  .md\:ml-64 {
+    margin-left: 0;
+  }
+  .md\:translate-x-0 {
+    transform: translateX(-100%);
+  }
+}
