@@ -1,8 +1,8 @@
 import dotenv
-from openai import OpenAI
+import ollama
 
 dotenv.load_dotenv()
-client = OpenAI()
+client = ollama.Client()
 
 
 def assistant(question):
@@ -44,13 +44,15 @@ $$
         },
     ]
 
-    response = client.chat.completions.create(
-        model="gpt-4o",
+    response = client.chat(
+        model="llama3.1",
         messages=messages,
-        temperature=0,
+        options={
+            "temperature": 0,
+        },
     )
 
-    final_response = response.choices[0].message.content
+    final_response = response["message"]["content"]
     return final_response
 
 
