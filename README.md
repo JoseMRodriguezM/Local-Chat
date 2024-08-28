@@ -1,4 +1,7 @@
-# Project Name
+# Local Chat
+
+![image](https://github.com/user-attachments/assets/788d8d67-0497-45c8-baf1-758f35e1b034)
+
 
 ## Overview
 
@@ -6,12 +9,10 @@ This project is a modern web application built with the following technologies:
 
 - **JavaScript**: Core programming language.
 - **React**: Library for building user interfaces.
-- **Next.js**: Framework for server-rendered React applications.
-- **Zustand**: State management library.
-- **Shadcn UI**: UI component library.
-- **Radix UI**: Accessible UI primitives.
 - **Tailwind CSS**: Utility-first CSS framework.
-- **Stylus**: CSS preprocessor for component-specific styles.
+- **Python**: Backend programming language.
+- **Flask**: Lightweight WSGI web application framework for Python.
+- **Llama 3.1 8b-Intruct**: The smallest but powerfull model made by Meta.
 
 ## Features
 
@@ -24,8 +25,11 @@ This project is a modern web application built with the following technologies:
 - **Accessibility**: Semantic HTML and ARIA attributes for better accessibility.
 - **Testing**: Unit and integration tests with Jest and React Testing Library.
 - **Internationalization**: Support for multiple languages using react-intl or next-i18next.
+- **AI Integration**: Backend powered by advanced AI models for intelligent responses and interactions.
+
 
 ## File Structure
+
 ````
 plaintext
 project-root/
@@ -125,6 +129,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - [Radix UI](https://www.radix-ui.com/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Stylus](https://stylus-lang.com/)
+- [Flask](https://flask.palletsprojects.com/)
+- [Ollama](https://ollama.com/) for AI model integration
 
 ## Contact
 
