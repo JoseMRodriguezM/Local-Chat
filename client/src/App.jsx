@@ -58,7 +58,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col w-screen h-screen bg-zinc-900">
+    <div className="flex flex-col flex-grow w-screen h-screen">
       <div className="fixed top-0 left-0 w-full h-14 shadow-md z-20 bg-zinc-800 flex items-center justify-between px-4">
         <NewChatButton onNewChat={handleNewChat} />
         <button
@@ -72,16 +72,18 @@ function App() {
       <div className="flex flex-grow pt-14">
         <div
           className={`fixed md:relative w-64 h-full transition-all duration-300 z-10 bg-zinc-800 ${
-            isSidebarOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
+            isSidebarOpen
+              ? "translate-x-0"
+              : "-translate-x-full md:translate-x-0"
           }`}
         >
           <Historial onSelectChat={handleSelectChat} />
         </div>
 
-        <div className="flex-grow overflow-auto p-4 md:ml-64">
+        <div className="flex-grow overflow-y-auto mt-2 mb-20">
           <div className="max-w-3xl mx-auto">
             {selectedChat ? (
-              <div className="mb-4">
+              <div>
                 <ChatBubble
                   text={selectedChat.question}
                   isUser={true}
@@ -107,7 +109,7 @@ function App() {
         </div>
       </div>
 
-      <div className="fixed bottom-0 left-0 right-0 z-20">
+      <div className="fixed bottom-0 left-0 right-0 m-4 h-[60px] z-50 ">
         <Question onSubmit={handleQuestionSubmit} setQuestion={setQuestion} />
       </div>
     </div>

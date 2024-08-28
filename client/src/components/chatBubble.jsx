@@ -30,9 +30,11 @@ const ChatBubble = ({ text = "", isUser, speed = 0.5, animate = true }) => {
   }, [text, speed, animate]);
 
   return (
-    <div className={`flex ${isUser ? "justify-end" : "justify-start"} mb-2`}>
+    <div
+      className={`flex w-[900px] ${isUser ? "justify-end" : "justify-start"} mb-2`}
+    >
       <div
-        className={`inline-block p-2 text-white sm:max-w-sm md:max-w-md lg:max-w-lg ${
+        className={`inline-block p-2 text-white  ${
           isUser ? "bg-zinc-700 rounded-full" : "bg-transparent"
         }`}
         style={{
